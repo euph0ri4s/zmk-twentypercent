@@ -18,3 +18,16 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+include:
+  - board: seeeduino_xiao_ble
+    shield: twentypercent_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+
+  - board: seeeduino_xiao_ble
+    shield: twentypercent_right_standalone
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+
+  - board: seeeduino_xiao_ble
+    shield: reset_xiao_ble

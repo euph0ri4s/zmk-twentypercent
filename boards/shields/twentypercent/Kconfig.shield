@@ -1,0 +1,5 @@
+config SHIELD_TWENTYPERCENT_LEFT
+  def_bool $(shields_list_contais,twentypercent_left)
+
+config SHIELD_TWENTYPERCENT_RIGHT_STANDALONE
+  def_bool $(shields_list_contais,twentypercent_right_standalone)
