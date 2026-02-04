@@ -22,10 +22,10 @@
         input-processors = <&zip_xy_scaler 1 3>; \
     }; \
     \
-    scroll { \
-        layers = <SCROLL>; \
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 40>, <&zip_xy_to_scroll_mapper>; \
-    }; \
+    //scroll { \
+    //    layers = <SCROLL>; \
+    //    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 40>, <&zip_xy_to_scroll_mapper>; \
+    //}; \
     \
     move { \
         layers = <BASE POINTER>; \

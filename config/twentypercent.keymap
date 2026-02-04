@@ -27,7 +27,6 @@
 
 
     base_layer {
-      label= "BASE";
       display-name = "Base";
       bindings = <
 
