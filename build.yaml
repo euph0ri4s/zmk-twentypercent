@@ -30,4 +30,4 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
 
   - board: xiao_ble
-    shield: reset_xiao_ble
+    shield: settings_reset

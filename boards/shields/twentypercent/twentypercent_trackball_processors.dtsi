@@ -16,7 +16,7 @@
 
 // Standard trackball processing configuration
 // Can be used in both standalone (trackball_listener) and dongle mode (input_split_listener)
-#define CHARYBDIS_TRACKBALL_PROCESSORS \
+#define TWENTYPERCENT_TRACKBALL_PROCESSORS \
     snipe { \
         layers = <SNIPING>; \
         input-processors = <&zip_xy_scaler 1 3>; \
