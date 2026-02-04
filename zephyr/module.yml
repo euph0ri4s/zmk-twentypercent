@@ -3,4 +3,4 @@ name: twentypercent
 build:
   settings:
     board_root: .
-    shield_root: .
+    dts_root: .
