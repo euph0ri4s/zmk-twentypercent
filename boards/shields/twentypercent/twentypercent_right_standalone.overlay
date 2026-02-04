@@ -6,8 +6,8 @@
  * Processes trackball input locally
  */
 
-#include "charybdis_right_common.dtsi"
-#include "charybdis_trackball_processors.dtsi"
+#include "twentypercent_right_common.dtsi"
+#include "twentypercent_trackball_processors.dtsi"
 
 / {
     trackball_listener: trackball_listener {
@@ -15,6 +15,6 @@
         status = "okay";
         device = <&trackball>;
 
-        CHARYBDIS_TRACKBALL_PROCESSORS
+        TWENTYPERCENT_TRACKBALL_PROCESSORS
     };
 };
