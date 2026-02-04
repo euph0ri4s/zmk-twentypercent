@@ -7,7 +7,6 @@
 / {
   chosen {
     zmk,kscan = &kscan0;
-
     /* ZMK Studio uses physical_layouts */
     zmk,physical-layout = &twentypercent_layout;
   };
@@ -41,7 +40,7 @@
   twentypercent_layout: twentypercent_layout {
     compatible = "zmk,physical-layout";
     display-name = "TwentyPercent";
-    transform = "default_transform";
+    transform = <&default_transform>;
 
     keys
       //                      w   h   x   y   rot rx  ry 
