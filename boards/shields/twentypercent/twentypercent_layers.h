@@ -17,4 +17,4 @@
 #define SYM2  4
 #define BT    5
 #define GAME  6
-#define Gplus 7
+#define GPLUS 7
