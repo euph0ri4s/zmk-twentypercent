@@ -24,6 +24,15 @@
     quick-tap-ms = <0>;
 };
 
+// Layer definitions
+#define BASE  0
+#define NAV   1 
+#define NUM   2
+#define SYM   3
+#define SYM2  4
+#define BT    5
+#define GAME  6
+#define GPLUS 7
 
 / {
     behaviors {
@@ -84,8 +93,7 @@
           &lt BT Z          &kp X             &kp C             &kp D               &kp H         &kp J             &kp K             &lt SYM2 L
       // ├─────────────────┼─────────────────┼─────────────────┼─────────────────┤ ├─────────────┼─────────────────┼─────────────────┼─────────────────┤
       //                   ╭──────────────────────────┬──────────────────────────╮ ╭──────────────────────────┬──────────────────────────╮
-      &kp N1 &kp N2 &kp N3 &kp N4   &kp N1 &kp N2 &kp N3 &kp N4 
-      //                      &meh                       &lt NAV BACKSPACE            &lt SYM TAB                &lt NUM ENTER
+                            &meh                       &lt NAV BACKSPACE            &lt SYM TAB                &lt NUM ENTER
       //                   ╰──────────────────────────┴──────────────────────────╯ ╰──────────────────────────┴──────────────────────────╯
       >;
     };
