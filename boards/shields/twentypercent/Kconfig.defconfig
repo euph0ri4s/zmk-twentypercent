@@ -3,6 +3,9 @@ if SHIELD_TWENTYPERCENT_RIGHT_STANDALONE
 config ZMK_KEYBOARD_NAME
   default "TwentyPercent"
 
+config ZMK_SPLIT
+  default y
+
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
   default y
 
