@@ -10,4 +10,11 @@
 #pragma once
 
 // Layer definitions matching the keymap
-#define BASE 0
+#define BASE  0
+#define NAV   1 
+#define NUM   2
+#define SYM   3
+#define SYM2  4
+#define BT    5
+#define GAME  6
+#define Gplus 7
