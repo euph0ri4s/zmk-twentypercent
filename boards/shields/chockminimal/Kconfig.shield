@@ -1,5 +1,5 @@
 config SHIELD_CHOCKMINIMAL_LEFT
   def_bool $(shields_list_contains,chockminimal_left)
 
-config SHIELD_CHOCKMINIMAL_RIGHT_STANDALONE
-  def_bool $(shields_list_contains,chockminimal_right_standalone)
+config SHIELD_CHOCKMINIMAL_RIGHT
+  def_bool $(shields_list_contains,chockminimal_right)
