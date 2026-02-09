@@ -1,0 +1,26 @@
+/*
+ * Copyright (c) 2024 The ZMK Contributors
+ * SPDX-License-Identifier: MIT
+ * 
+ * Charybdis right keyboard - Standalone mode (acts as central)
+ * Processes trackball input locally
+ */
+#include "chocminimal.dtsi"
+
+&default_transform {
+    col-offset = <4>;
+};
+
+&kscan0{
+  col-gpios
+    = <&xiao_d 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+    , <&xiao_d 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+    , <&xiao_d 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+    , <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+    ;
+  row-gpios
+    = <&xiao_d 4  (GPIO_ACTIVE_HIGH)>
+    , <&xiao_d 5  (GPIO_ACTIVE_HIGH)>
+    , <&xiao_d 6  (GPIO_ACTIVE_HIGH)>
+    ;
+};
