@@ -36,14 +36,25 @@
 
 / {
     behaviors {
-        hm: homerow_mods {
+        hml: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "homerow_mods";
             #binding-cells = <2>;
             tapping-term-ms = <240>;
             quick_tap_ms = <0>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <4 5 6 7 12 13 14 15 18 19>;
+            hold-trigger-on-release;
+        };
+        hmr: homerow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <240>;
+            quick_tap_ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <0 1 2 3 8 9 10 11 16 17>;
+            hold-trigger-on-release;
         };
     };
     
@@ -96,9 +107,9 @@
        COMBO(U,     0, 50,  4 12)
        COMBO(RBKT,  3, 50,  4 12)
        COMBO(F9,    2, 50,  4 12)
-       COMBO(MINUS, 0, 50,  5  6)
        COMBO(F10,   2, 50,  5 13)
-       COMBO(BSPC,  0, 55,  6  7)
+       COMBO(Y,     0, 50,  5  6)
+       COMBO(MINUS, 0, 55,  6  7)
        COMBO(Y,     0, 55,  6 14)
        COMBO(F11,   2, 50,  6 14)
        COMBO(F12,   2, 50,  7 15)
@@ -127,7 +138,7 @@
       bindings = <
 
       // ╭─────────────────┬─────────────────┬─────────────────┬─────────────────╮ ╭─────────────┬─────────────────┬─────────────────┬─────────────────┐
-          &hm LGUI A        &hm LALT R        &hm LCTRL S       &hm LSHIFT T        &hm LSHIFT N  &hm LCTRL E       &hm LALT I        &hm LGUI O
+          &hml LGUI A       &hml LALT R       &hml LCTRL S      &hml LSHIFT T       &hmr LSHIFT N &hmr LCTRL E      &hmr LALT I       &hmr LGUI O
       // ├─────────────────┼─────────────────┼─────────────────┼─────────────────┤ ├─────────────┼─────────────────┼─────────────────┼─────────────────┤
           &lt BT Z          &kp X             &kp C             &kp D               &kp H         &kp J             &kp K             &lt SYM2 L
       // ├─────────────────┼─────────────────┼─────────────────┼─────────────────┤ ├─────────────┼─────────────────┼─────────────────┼─────────────────┤
