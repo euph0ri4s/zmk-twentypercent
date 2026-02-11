@@ -104,7 +104,7 @@
        COMBO(U,     0, 35,  4  5)
        COMBO(RPAR,  3, 50,  4  5)
        MCOMBO(meh,  0, 50, 4 5 6 7)
-       MCOMBO(DOT,  0, 50,  4 12)
+       COMBO(DOT,  0, 50,  4 12)
        COMBO(RBKT,  3, 50,  4 12)
        COMBO(F9,    2, 50,  4 12)
        COMBO(COMMA, 0, 50,  5 13)
