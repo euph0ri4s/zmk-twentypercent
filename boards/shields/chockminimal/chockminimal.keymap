@@ -80,7 +80,7 @@
        COMBO(ESC,   0, 50,  8  9)
        COMBO(B,     0, 55,  9 10)
        COMBO(V,     0, 60, 10 11)
-       COMBO(LBRC   3, 50, 10 11)
+       COMBO(LBRC,  3, 50, 10 11)
 
        COMBO(DOT,   0, 35,  4  5)
        COMBO(RPAR,  3, 50,  4  5)
