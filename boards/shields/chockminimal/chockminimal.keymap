@@ -17,6 +17,13 @@
         key-positions = <KEYPOS>; \
         bindings = <&kp NAME>; \
     };
+#define MCOMBO(NAME, LAYER, TIMEOUT, KEYPOS) \
+    combo_##NAME { \
+        layers = <LAYER>; \
+        timeout-ms = <TIMEOUT>; \
+        key-positions = <KEYPOS>; \
+        bindings = <&NAME>; \
+    };
 
 &lt {
     flavor = "tap-preferred";
@@ -85,7 +92,7 @@
        COMBO(DOT,   0, 35,  4  5)
        COMBO(RPAR,  3, 50,  4  5)
        COMBO(COMMA, 0, 35,  4  6)
-       COMBO(&meh,  0, 50,  4  7)
+       MCOMBO(&meh, 0, 50,  4  7)
        COMBO(U,     0, 50,  4 12)
        COMBO(RBKT,  3, 50,  4 12)
        COMBO(F9,    2, 50,  4 12)
