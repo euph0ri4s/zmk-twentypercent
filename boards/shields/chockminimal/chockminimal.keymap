@@ -117,7 +117,6 @@
        COMBO(RBRC,  3, 50, 12 13)
        COMBO(FSLH,  0, 55, 12 14)
        COMBO(DEL,   0, 55, 12 15)
-       COMBO(U,     0, 50, 13 14)
        MCOMBO(caps_word, 0, 55, 14 15)
        COMBO(LANG2, 0, 50, 18 19)
 
