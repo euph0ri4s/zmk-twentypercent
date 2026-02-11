@@ -102,6 +102,7 @@
 
        COMBO(DOT,   0, 35,  4  5)
        COMBO(RPAR,  3, 50,  4  5)
+       MCOMBO(key_repeat, 0, 50, 4 5 6)
        COMBO(COMMA, 0, 35,  4  6)
        MCOMBO(meh,  0, 50,  4  7)
        COMBO(U,     0, 50,  4 12)
@@ -110,7 +111,6 @@
        COMBO(F10,   2, 50,  5 13)
        COMBO(Y,     0, 50,  5  6)
        COMBO(MINUS, 0, 55,  6  7)
-       COMBO(Y,     0, 55,  6 14)
        COMBO(F11,   2, 50,  6 14)
        COMBO(F12,   2, 50,  7 15)
        COMBO(M,     0, 50, 12 13)
