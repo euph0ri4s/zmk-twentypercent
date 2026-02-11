@@ -99,7 +99,7 @@
        COMBO(B,     0, 55,  9 10)
        COMBO(V,     0, 60, 10 11)
        COMBO(LBRC,  3, 50, 10 11)
-       COMBO(LANG1, 0, 50, 16 17)
+       COMBO(LANG2, 0, 50, 16 17)
 
        COMBO(U,     0, 35,  4  5)
        COMBO(RPAR,  3, 50,  4  5)
@@ -118,7 +118,7 @@
        COMBO(FSLH,  0, 55, 12 14)
        COMBO(DEL,   0, 55, 12 15)
        MCOMBO(caps_word, 0, 55, 14 15)
-       COMBO(LANG2, 0, 50, 18 19)
+       COMBO(LANG1, 0, 50, 18 19)
 
      };
 
