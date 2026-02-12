@@ -92,7 +92,7 @@
      combos {
        compatible = "zmk,combos";
 
-       COMBO(LSHFT,  0, 55,  0, 1)
+       COMBO(LSHFT,  0, 55,  0  1)
        SCOMBO(LCTRL, 0, 55, 0 1 2)
        COMBO(Q,      0, 55,  0  8)
        COMBO(F,      0, 55,  1  2)
