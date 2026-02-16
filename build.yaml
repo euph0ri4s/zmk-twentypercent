@@ -26,7 +26,7 @@ include:
     shield: twentypercent_right_standalone
   #    snippet: studio-rpc-usb-uart
   #    cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: chockminimal_left
 
   - board: xiao_ble
