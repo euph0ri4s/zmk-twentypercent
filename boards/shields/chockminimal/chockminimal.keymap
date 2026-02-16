@@ -61,27 +61,27 @@
     };
     
      macros {
-             meh: meh {
-         	    label = "meh";
-         	    compatible = "zmk,behavior-macro";
-         	    #binding-cells = <0>;
-         	    bindings
-         	    	= <&macro_press   &sk LS(LC(LALT))>
-         		, <&macro_pause_for_release>
-         		, <&macro_release &sk LS(LC(LALT))>
-         		;
-             };
-             
-             hyper: hyper {
-         	    label = "hyper";
-         	    compatible = "zmk,behavior-macro";
-         	    #binding-cells = <0>;
-         	    bindings
-         	    	= <&macro_press   &sk LS(LA(LC(LGUI)))>
-         		, <&macro_pause_for_release>
-         		, <&macro_release &sk LS(LA(LC(LGUI)))>
-         		;
-             };
+            //  meh: meh {
+         	  //   label = "meh";
+         	  //   compatible = "zmk,behavior-macro";
+         	  //   #binding-cells = <0>;
+         	  //   bindings
+         	  //   	= <&macro_press   &sk LS(LC(LALT))>
+         		// , <&macro_pause_for_release>
+         		// , <&macro_release &sk LS(LC(LALT))>
+         		// ;
+            //  };
+            //  
+            //  hyper: hyper {
+         	  //   label = "hyper";
+         	  //   compatible = "zmk,behavior-macro";
+         	  //   #binding-cells = <0>;
+         	  //   bindings
+         	  //   	= <&macro_press   &sk LS(LA(LC(LGUI)))>
+         		//     , <&macro_pause_for_release>
+         		//     , <&macro_release &sk LS(LA(LC(LGUI)))>
+         		//     ;
+            //  };
 
              sls: sls {
                label = "sls";
