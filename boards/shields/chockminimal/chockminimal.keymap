@@ -17,6 +17,7 @@
         key-positions = <KEYPOS>; \
         bindings = <&kp NAME>; \
     };
+
 #define MCOMBO(NAME, LAYER, TIMEOUT, KEYPOS) \
     combo_##NAME { \
         layers = <LAYER>; \
@@ -24,19 +25,13 @@
         key-positions = <KEYPOS>; \
         bindings = <&NAME>; \
     };
-#define SCOMBO(NAME, LAYER, TIMEOUT, KEYPOS) \
-    combo_##NAME { \
-        layers = <LAYER>; \
-        timeout-ms = <TIMEOUT>; \
-        key-positions = <KEYPOS>; \
-        bindings = <&sk NAME>; \
-    };
 
 &lt {
     flavor = "tap-preferred";
     tapping-term-ms = <200>;
     quick-tap-ms = <0>;
 };
+
 &sl {
   release-after-ms = <2000>;
 };
@@ -87,15 +82,70 @@
          		, <&macro_release &sk LS(LA(LC(LGUI)))>
          		;
              };
+
+             sls: sls {
+               label = "sls";
+               compatible = "zmk,behavior-macro";
+               #binding-cells = <0>;
+               bindings
+                = <&macro_press &sk LSHFT>
+                , <&macro_pause_for_release>
+                , <&macro_release &sk LSHFT>
+                ;
+             };
+
+             slc: slc {
+               label = "slc";
+               compatible = "zmk,behavior-macro";
+               #binding-cells = <0>;
+               bindings
+                = <&macro_press &sk LCTRL>
+                , <&macro_pause_for_release>
+                , <&macro_release &sk LCTRL>
+                ;
+             };
+
+             sla: sla {
+               label = "sla";
+               compatible = "zmk,behavior-macro";
+               #binding-cells = <0>;
+               bindings
+                = <&macro_press &sk LALT>
+                , <&macro_pause_for_release>
+                , <&macro_release &sk LALT>
+                ;
+             };
+
+             slg: slg {
+               label = "slg";
+               compatible = "zmk,behavior-macro";
+               #binding-cells = <0>;
+               bindings
+                = <&macro_press &sk LGUI>
+                , <&macro_pause_for_release>
+                , <&macro_release &sk LGUI>
+                ;
+             };
+
+             srg: srg {
+               label = "srg";
+               compatible = "zmk,behavior-macro";
+               #binding-cells = <0>;
+               bindings
+                = <&macro_press &sk RGUI>
+                , <&macro_pause_for_release>
+                , <&macro_release &sk RGUI>
+                ;
+             };
      };
 
      combos {
        compatible = "zmk,combos";
 
-       SCOMBO(LCTRL, 0, 55, 0 1 2)
+       MCOMBO(slc,   0, 55, 0 1 2)
        COMBO(Q,      0, 55,  0  8)
        COMBO(F,      0, 55,  1  2)
-       COMBO(LSHFT, 0, 55, 1 2 3)
+       COMBO(LSHFT,  0, 55, 1 2 3)
        COMBO(W,      0, 55,  1  9)
        COMBO(N7,     2, 50,  1  9)
        COMBO(P,      0, 45,  2  3)
@@ -105,21 +155,20 @@
        COMBO(N9,     2, 50,  3 11)
        COMBO(LBKT,   3, 50,  3 11)
        COMBO(ESC,    0, 50,  8  9)
-       SCOMBO(LALT,  0, 55, 8 9 10)
-       COMBO(B,      0, 55,  9 10)
-       SCOMBO(LGUI,  0, 55, 9 10 11)
+       MCOMBO(sla,   0, 55, 8 9 10)
+       MCOMBO(slg,   0, 50, 9 10 11)
        COMBO(V,      0, 60, 10 11)
        COMBO(LBRC,   3, 50, 10 11)
        COMBO(LANG2,  0, 50, 16 17)
 
        COMBO(U,      0, 35,  4  5)
        COMBO(RPAR,   3, 50,  4  5)
-       SCOMBO(RSHFT, 0, 55, 4 5 6)
+       MCOMBO(sls,   0, 55, 4 5 6)
        COMBO(DOT,    0, 50,  4 12)
        COMBO(RBKT,   3, 50,  4 12)
        COMBO(F9,     2, 50,  4 12)
        COMBO(Y,      0, 50,  5  6)
-       SCOMBO(RCTRL, 0, 55, 5 6 7)
+       MCOMBO(slc,   0, 55, 5 6 7)
        COMBO(COMMA,  0, 50,  5 13)
        COMBO(F10,    2, 50,  5 13)
        COMBO(MINUS,  0, 55,  6  7)
@@ -127,10 +176,10 @@
        COMBO(F12,    2, 50,  7 15)
        COMBO(M,      0, 50, 12 13)
        COMBO(RBRC,   3, 50, 12 13)
-       SCOMBO(RGUI,  0, 55, 12 13 14)
+       MCOMBO(srg,   0, 55, 12 13 14)
        COMBO(FSLH,   0, 55, 12 14)
        COMBO(DEL,    0, 55, 12 15)
-       SCOMBO(RALT,  0, 55, 13 14 15)
+       MCOMBO(la,    0, 55, 13 14 15)
        MCOMBO(caps_word, 0, 55, 14 15)
        COMBO(LANG1,  0, 50, 18 19)
 
