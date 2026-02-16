@@ -94,6 +94,17 @@
                 ;
              };
 
+             srs: srs {
+               label = "srs";
+               compatible = "zmk,behavior-macro";
+               #binding-cells = <0>;
+               bindings
+                = <&macro_press &sk RSHFT>
+                , <&macro_pause_for_release>
+                , <&macro_release &sk RSHFT>
+                ;
+             };
+
              slc: slc {
                label = "slc";
                compatible = "zmk,behavior-macro";
@@ -105,6 +116,17 @@
                 ;
              };
 
+             src: src {
+               label = "src";
+               compatible = "zmk,behavior-macro";
+               #binding-cells = <0>;
+               bindings
+                = <&macro_press &sk RCTRL>
+                , <&macro_pause_for_release>
+                , <&macro_release &sk RCTRL>
+                ;
+             };
+
              sla: sla {
                label = "sla";
                compatible = "zmk,behavior-macro";
@@ -113,6 +135,17 @@
                 = <&macro_press &sk LALT>
                 , <&macro_pause_for_release>
                 , <&macro_release &sk LALT>
+                ;
+             };
+
+             sra: sra {
+               label = "sra";
+               compatible = "zmk,behavior-macro";
+               #binding-cells = <0>;
+               bindings
+                = <&macro_press &sk RALT>
+                , <&macro_pause_for_release>
+                , <&macro_release &sk RALT>
                 ;
              };
 
@@ -163,12 +196,12 @@
 
        COMBO(U,      0, 35,  4  5)
        COMBO(RPAR,   3, 50,  4  5)
-       MCOMBO(sls,   0, 55, 4 5 6)
+       MCOMBO(srs,   0, 55, 4 5 6)
        COMBO(DOT,    0, 50,  4 12)
        COMBO(RBKT,   3, 50,  4 12)
        COMBO(F9,     2, 50,  4 12)
        COMBO(Y,      0, 50,  5  6)
-       MCOMBO(slc,   0, 55, 5 6 7)
+       MCOMBO(src,   0, 55, 5 6 7)
        COMBO(COMMA,  0, 50,  5 13)
        COMBO(F10,    2, 50,  5 13)
        COMBO(MINUS,  0, 55,  6  7)
@@ -179,7 +212,7 @@
        MCOMBO(srg,   0, 55, 12 13 14)
        COMBO(FSLH,   0, 55, 12 14)
        COMBO(DEL,    0, 55, 12 15)
-       MCOMBO(la,    0, 55, 13 14 15)
+       MCOMBO(sra,   0, 55, 13 14 15)
        MCOMBO(caps_word, 0, 55, 14 15)
        COMBO(LANG1,  0, 50, 18 19)
 
