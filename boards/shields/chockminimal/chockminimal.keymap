@@ -194,8 +194,10 @@
        MCOMBO(slg,   0, 50, 11 16)
        COMBO(LANG2,  0, 50, 16 17)
 
+
        COMBO(U,      0, 35,  4  5)
        COMBO(RPAR,   3, 50,  4  5)
+       MCOMBO(studio_unlock, 0 ,55, 4 6)
        COMBO(DOT,    0, 50,  4 12)
        COMBO(RBKT,   3, 50,  4 12)
        COMBO(F9,     2, 50,  4 12)
@@ -215,8 +217,6 @@
        MCOMBO(sra,   0, 55, 13 19)
        MCOMBO(caps_word, 0, 55, 14 15)
        COMBO(LANG1,  0, 50, 18 19)
-
-       MCOMBO(studio_unlock, 0 ,55, 16 17 18 19)
 
      };
 
