@@ -95,7 +95,7 @@
        SCOMBO(LCTRL, 0, 55, 0 1 2)
        COMBO(Q,      0, 55,  0  8)
        COMBO(F,      0, 55,  1  2)
-       SCOMBO(LSHFT, 0, 55, 1 2 3)
+       COMBO(LSHFT, 0, 55, 1 2 3)
        COMBO(W,      0, 55,  1  9)
        COMBO(N7,     2, 50,  1  9)
        COMBO(P,      0, 45,  2  3)
