@@ -17,7 +17,6 @@
         key-positions = <KEYPOS>; \
         bindings = <&kp NAME>; \
     };
-
 #define MCOMBO(NAME, LAYER, TIMEOUT, KEYPOS) \
     combo_##NAME { \
         layers = <LAYER>; \
@@ -31,7 +30,6 @@
     tapping-term-ms = <200>;
     quick-tap-ms = <0>;
 };
-
 &sl {
   release-after-ms = <2000>;
 };
@@ -61,160 +59,66 @@
     };
     
      macros {
-            //  meh: meh {
-         	  //   label = "meh";
-         	  //   compatible = "zmk,behavior-macro";
-         	  //   #binding-cells = <0>;
-         	  //   bindings
-         	  //   	= <&macro_press   &sk LS(LC(LALT))>
-         		// , <&macro_pause_for_release>
-         		// , <&macro_release &sk LS(LC(LALT))>
-         		// ;
-            //  };
-            //  
-            //  hyper: hyper {
-         	  //   label = "hyper";
-         	  //   compatible = "zmk,behavior-macro";
-         	  //   #binding-cells = <0>;
-         	  //   bindings
-         	  //   	= <&macro_press   &sk LS(LA(LC(LGUI)))>
-         		//     , <&macro_pause_for_release>
-         		//     , <&macro_release &sk LS(LA(LC(LGUI)))>
-         		//     ;
-            //  };
-
-             sls: sls {
-               label = "sls";
-               compatible = "zmk,behavior-macro";
-               #binding-cells = <0>;
-               bindings
-                = <&macro_press &sk LSHFT>
-                , <&macro_pause_for_release>
-                , <&macro_release &sk LSHFT>
-                ;
+             meh: meh {
+         	    label = "meh";
+         	    compatible = "zmk,behavior-macro";
+         	    #binding-cells = <0>;
+         	    bindings
+         	    	= <&macro_press   &sk LS(LC(LALT))>
+         		, <&macro_pause_for_release>
+         		, <&macro_release &sk LS(LC(LALT))>
+         		;
              };
-
-             srs: srs {
-               label = "srs";
-               compatible = "zmk,behavior-macro";
-               #binding-cells = <0>;
-               bindings
-                = <&macro_press &sk RSHFT>
-                , <&macro_pause_for_release>
-                , <&macro_release &sk RSHFT>
-                ;
-             };
-
-             slc: slc {
-               label = "slc";
-               compatible = "zmk,behavior-macro";
-               #binding-cells = <0>;
-               bindings
-                = <&macro_press &sk LCTRL>
-                , <&macro_pause_for_release>
-                , <&macro_release &sk LCTRL>
-                ;
-             };
-
-             src: src {
-               label = "src";
-               compatible = "zmk,behavior-macro";
-               #binding-cells = <0>;
-               bindings
-                = <&macro_press &sk RCTRL>
-                , <&macro_pause_for_release>
-                , <&macro_release &sk RCTRL>
-                ;
-             };
-
-             sla: sla {
-               label = "sla";
-               compatible = "zmk,behavior-macro";
-               #binding-cells = <0>;
-               bindings
-                = <&macro_press &sk LALT>
-                , <&macro_pause_for_release>
-                , <&macro_release &sk LALT>
-                ;
-             };
-
-             sra: sra {
-               label = "sra";
-               compatible = "zmk,behavior-macro";
-               #binding-cells = <0>;
-               bindings
-                = <&macro_press &sk RALT>
-                , <&macro_pause_for_release>
-                , <&macro_release &sk RALT>
-                ;
-             };
-
-             slg: slg {
-               label = "slg";
-               compatible = "zmk,behavior-macro";
-               #binding-cells = <0>;
-               bindings
-                = <&macro_press &sk LGUI>
-                , <&macro_pause_for_release>
-                , <&macro_release &sk LGUI>
-                ;
-             };
-
-             srg: srg {
-               label = "srg";
-               compatible = "zmk,behavior-macro";
-               #binding-cells = <0>;
-               bindings
-                = <&macro_press &sk RGUI>
-                , <&macro_pause_for_release>
-                , <&macro_release &sk RGUI>
-                ;
+             
+             hyper: hyper {
+         	    label = "hyper";
+         	    compatible = "zmk,behavior-macro";
+         	    #binding-cells = <0>;
+         	    bindings
+         	    	= <&macro_press   &sk LS(LA(LC(LGUI)))>
+         		, <&macro_pause_for_release>
+         		, <&macro_release &sk LS(LA(LC(LGUI)))>
+         		;
              };
      };
 
      combos {
        compatible = "zmk,combos";
 
-       MCOMBO(slc,   0, 55, 0 1 2)
-       COMBO(Q,      0, 55,  0  8)
-       COMBO(F,      0, 55,  1  2)
-       COMBO(LSHFT,  0, 55, 1 2 3)
-       COMBO(W,      0, 55,  1  9)
-       COMBO(N7,     2, 50,  1  9)
-       COMBO(P,      0, 45,  2  3)
-       COMBO(LPAR,   3, 50,  2  3)
-       COMBO(N8,     2, 50,  2 10)
-       COMBO(G,      0, 50,  3 11)
-       COMBO(N9,     2, 50,  3 11)
-       COMBO(LBKT,   3, 50,  3 11)
-       COMBO(ESC,    0, 50,  8  9)
-       MCOMBO(sla,   0, 55, 8 9 10)
-       MCOMBO(slg,   0, 50, 9 10 11)
-       COMBO(V,      0, 60, 10 11)
-       COMBO(LBRC,   3, 50, 10 11)
-       COMBO(LANG2,  0, 50, 16 17)
+       COMBO(Q,     0, 55,  0  8)
+       COMBO(F,     0, 55,  1  2)
+       COMBO(W,     0, 55,  1  9)
+       COMBO(N7,    2, 50,  1  9)
+       COMBO(P,     0, 45,  2  3)
+       COMBO(LPAR,  3, 50,  2  3)
+       COMBO(N8,    2, 50,  2 10)
+       COMBO(G,     0, 50,  3 11)
+       COMBO(N9,    2, 50,  3 11)
+       COMBO(LBKT,  3, 50,  3 11)
+       COMBO(ESC,   0, 50,  8  9)
+       COMBO(B,     0, 55,  9 10)
+       COMBO(V,     0, 60, 10 11)
+       COMBO(LBRC,  3, 50, 10 11)
+       COMBO(LANG2, 0, 50, 16 17)
 
-       COMBO(U,      0, 35,  4  5)
-       COMBO(RPAR,   3, 50,  4  5)
-       MCOMBO(srs,   0, 55, 4 5 6)
-       COMBO(DOT,    0, 50,  4 12)
-       COMBO(RBKT,   3, 50,  4 12)
-       COMBO(F9,     2, 50,  4 12)
-       COMBO(Y,      0, 50,  5  6)
-       MCOMBO(src,   0, 55, 5 6 7)
-       COMBO(COMMA,  0, 50,  5 13)
-       COMBO(F10,    2, 50,  5 13)
-       COMBO(MINUS,  0, 55,  6  7)
-       COMBO(F11,    2, 50,  6 14)
-       COMBO(F12,    2, 50,  7 15)
-       COMBO(M,      0, 50, 12 13)
-       COMBO(RBRC,   3, 50, 12 13)
-       MCOMBO(srg,   0, 55, 12 13 14)
-       COMBO(FSLH,   0, 55, 12 14)
-       COMBO(DEL,    0, 55, 12 15)
-       MCOMBO(sra,   0, 55, 13 14 15)
+       COMBO(U,     0, 35,  4  5)
+       COMBO(RPAR,  3, 50,  4  5)
+       MCOMBO(meh,  0, 50, 4 5 6 7)
+       COMBO(DOT,  0, 50,  4 12)
+       COMBO(RBKT,  3, 50,  4 12)
+       COMBO(F9,    2, 50,  4 12)
+       COMBO(COMMA, 0, 50,  5 13)
+       COMBO(F10,   2, 50,  5 13)
+       COMBO(Y,     0, 50,  5  6)
+       COMBO(MINUS, 0, 55,  6  7)
+       COMBO(F11,   2, 50,  6 14)
+       COMBO(F12,   2, 50,  7 15)
+       COMBO(M,     0, 50, 12 13)
+       COMBO(RBRC,  3, 50, 12 13)
+       COMBO(FSLH,  0, 55, 12 14)
+       COMBO(DEL,   0, 55, 12 15)
        MCOMBO(caps_word, 0, 55, 14 15)
-       COMBO(LANG1,  0, 50, 18 19)
+       COMBO(LANG1, 0, 50, 18 19)
 
      };
 
@@ -235,7 +139,7 @@
       bindings = <
 
       // ╭─────────────────┬─────────────────┬─────────────────┬─────────────────╮ ╭─────────────┬─────────────────┬─────────────────┬─────────────────┐
-          &kp A             &kp R             &kp S             &kp T               &kp N         &kp E             &kp I             &kp O
+          &hml LGUI A       &hml LALT R       &hml LCTRL S      &hml LSHIFT T       &hmr LSHIFT N &hmr LCTRL E      &hmr LALT I       &hmr LGUI O
       // ├─────────────────┼─────────────────┼─────────────────┼─────────────────┤ ├─────────────┼─────────────────┼─────────────────┼─────────────────┤
           &lt BT Z          &kp X             &kp C             &kp D               &kp H         &kp J             &kp K             &lt SYM2 L
       // ├─────────────────┼─────────────────┼─────────────────┼─────────────────┤ ├─────────────┼─────────────────┼─────────────────┼─────────────────┤
