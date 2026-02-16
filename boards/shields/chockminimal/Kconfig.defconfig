@@ -3,9 +3,6 @@ if SHIELD_CHOCKMINIMAL_RIGHT
 config ZMK_KEYBOARD_NAME
   default "ChockMinimal"
 
-config ZMK_SPLIT
-  default y
-
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
   default y
 
