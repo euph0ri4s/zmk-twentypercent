@@ -11,9 +11,9 @@
     zmk,physical-layout = &chockminimal_layout;
   };
 
-  /* vbatt: vbatt { */
-  /*   compatible = "zmk,battery-nrf-vddh"; */
-  /* }; */
+  vbatt: vbatt {
+    compatible = "zmk,battery-nrf-vddh";
+  };
 
   /* Matrix Transform */
   default_transform: keymap_transform_0 {
