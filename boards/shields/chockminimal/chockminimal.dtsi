@@ -65,8 +65,8 @@
       , <&key_physical_attrs 100 100  900   138   0  0   0>
 
       // Thumb clusters
-      , <&key_physical_attrs 100 100  235   250   0  0   0>
-      , <&key_physical_attrs 100 100  350   288   0  0   0>
+      , <&key_physical_attrs 100 100  335   250   0  0   0>
+      , <&key_physical_attrs 100 100  450   288   0  0   0>
 
       , <&key_physical_attrs 100 100  550   250   0  0   0>
       , <&key_physical_attrs 100 100  635   288   0  0   0>
